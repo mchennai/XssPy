@@ -1,0 +1,45 @@
+=== BUG BOUNTY SQL INJECTION SCAN RESULTS ===
+
+Target Domains:
+- acorns.com
+- gohenry.com
+- pixpay.fr
+- graphql.acorns.com
+
+URLs Tested: 8
+Vulnerable URLs: 8
+
+=== VULNERABLE URLS ===
+
+URL: https://www.acorns.com/learn/search/?q=invest
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/learn/?page=3
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/learn/search/?p=3&q=invest
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/learn/search/?q=traditional+ira+vs+Roth+ira
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/learn/search/?p=7&q=invest
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/support/search/?q=password
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.acorns.com/learn/search/?p=2&q=invest
+Status: VULNERABLE
+--------------------------------------------------
+
+URL: https://www.gohenry.com/us/terms-and-conditions/?q=traditional+ira+vs+Roth+ira
+Status: VULNERABLE
+--------------------------------------------------
+
