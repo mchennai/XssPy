@@ -1,0 +1,13 @@
+https://graphql.acorns.com
+https://api.acorns.com
+https://api-mobile.acorns.com
+https://api-app.acorns.com
+https://mobile-api.acorns.com
+https://partner-api.acorns.com
+https://api.shipmunk.acorns.com
+https://client-api.acorns.com
+https://shipmunk-api.acorns.com
+https://usbank-api.acorns.com
+https://capi.acorns.com
+https://capi-g.acorns.com
+https://murder.pixpay.fr
